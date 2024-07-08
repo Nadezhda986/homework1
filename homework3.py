@@ -1,9 +1,9 @@
 name="Nadezhda"
-print(name)
+print(name, type(name))
 age=38
-print (age)
-new_age=age + 2
-print(new_age)
-is_student="True"
-print(is_student)
+print (age,type(age))
+age=(age + 2)
+print(age, type(age))
+is_student= True
+print(is_student, type(is_student))
 
