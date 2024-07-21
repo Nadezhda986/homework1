@@ -1,0 +1,17 @@
+my_dict={'Nadezhda':1986,'Nikolay':1989,'Maria':1984}
+print(my_dict)
+print(my_dict['Nikolay'])
+print(my_dict.get('Andrey'))
+my_dict.update({'Anatoliy':1993,'Andrey':1990})
+print(my_dict)
+my_dict.pop('Anatoliy')
+print(my_dict)
+a=my_dict.pop('Andrey')
+print(a)
+my_set_={1,1,1,'list',333.56,2,2,3.14}
+print(my_set_)
+print(my_set_.add(7))
+print(my_set_.add(98))
+print(my_set_)
+print(my_set_.remove('list'))
+print(my_set_)
