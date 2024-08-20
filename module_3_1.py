@@ -7,9 +7,14 @@ def string_info(string):
    count_calls()
    return (len(string), string.upper(), string.lower())
 
-def is_contains(string, strings):
+def is_contains(str_, list_to_search):
    count_calls()
-   return string.lower() in map(str.lower, strings)
+   is_in_list = False
+   str_ = str_.lower()
+   for i in list_to_search:
+      if str_ == i.lower():
+         is_in_list = True
+   return is_in_list
 
 
 print(string_info('Capybara'))
