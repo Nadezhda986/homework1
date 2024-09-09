@@ -9,7 +9,6 @@ class Horse:
     def __init__(self):
         self.x_distance = 0
         self.sound = 'Frrr'
-        super().__init__()
 
     def run(self, dx):
         self.x_distance += dx
@@ -39,12 +38,14 @@ voice - который печатает значение унаследован�
 '''''
 class Pegasus(Horse, Eagle):
     def __init__(self):
-        super().__init__()
+        Horse.__init__(self)
+        Eagle.__init__(self)
+
 
 
     def move(self, dx, dy):
-        self.run(dx)
-        self.fly(dy)
+        super().run(dx)
+        super().fly(dy)
 
     def get_pos(self):
         return (self.x_distance, self.y_distance)
