@@ -1,9 +1,5 @@
 def apply_all_func(int_list, *functions):
-    '''
-    Возвращает словарь с ключом названия функции и значением результата функции
-        int_list - список из чисел (int, float)
-        *functions - неограниченное количество функций для списка
-    '''
+
     results = {}
     for func in functions:
         results[func.__name__] = func(int_list)
